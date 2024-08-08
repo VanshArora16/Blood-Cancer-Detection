@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Image Recognition for Blood Cancer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="popup">
+            <h1>Welcome to Automated Image Recognition for Blood Cancer</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="content">
+            <h2>Upload Image</h2>
+            <input type="file" id="imageUpload" accept="image/*">
+            <br>
+            <button id="uploadButton">Upload</button>
+            
+            <div id="result" style="display: none;">
+                <h3>Analysis Result:</h3>
+                <img id="uploadedImage" src="" alt="Image not found">
+                <p id="analysisText"></p>
+                <button id="removeButton" style="display: none;">Remove Image</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Automated Image Recognition for Blood Cancer</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
